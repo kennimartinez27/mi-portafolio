@@ -417,3 +417,448 @@ html {
        width: 80%;
     }
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* SECCION INICIO */
+#inicio {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("image.png");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#inicio .contenido header {
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#inicio .contenido header .contenido-header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#inicio .contenido header .contenido-header h1 {
+    text-align: center;
+    color: #ff5080;
+}
+
+#inicio .contenido header .contenido-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 12px;
+    font-weight: 400;
+    transition: 0.5s;
+}
+
+#inicio .contenido header .contenido-header nav ul a:hover {
+    color: #ff5080;
+}
+
+#inicio .contenido header .contenido-header .redes a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: 0.5s;
+}
+
+#inicio .contenido header .contenido-header .redes a:hover {
+    color: #ff5080;
+}
+
+#inicio .contenido .presentacion {
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+#inicio .contenido .presentacion .bienvenida {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#inicio .contenido .presentacion h2 {
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion h2 span {
+    font-size: 25px;
+    color: #ff5080;
+}
+
+#inicio .contenido .presentacion .descripcion {
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion a {
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+#inicio .contenido .presentacion a:hover {
+    background-color: #ff5080;
+}
+
+#icono-nav {
+    color: #fff;
+    display: none;
+}
+
+/* SECCION SOBRE MI */
+#sobremi {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 15px;
+    color: #111135;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#sobremi .contenedor-foto {
+    flex: 1;
+    max-width: 400px;
+}
+
+#sobremi .contenedor-foto img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    background-color: #f3f3f3;
+}
+
+#sobremi .sobremi {
+    flex: 2;
+}
+
+#sobremi .sobremi .titulo-seccion {
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #d3d3d3;
+    text-decoration-thickness: 5px;
+}
+
+#sobremi .sobremi h2 {
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#sobremi .sobremi h3 {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ff5080;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+#sobremi .sobremi p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #565656;
+    margin-bottom: 12px;
+}
+
+#sobremi .sobremi a {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    transition: 0.3s;
+}
+
+#sobremi .sobremi a:hover {
+    background-color: #ff5080;
+    color: #fff;
+}
+
+/* SECCION SERVICIOS */
+#servicios {
+    padding: 100px 20px;
+    background-color: #fff;
+    color: #111135;
+}
+
+#servicios .titulo-seccion {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #111135;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#servicios .titulo-seccion::after {
+    content: '';
+    width: 80px;
+    height: 3px;
+    background-color: #ff5080;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#servicios .fila {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#servicios .servicio {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 15px;
+    max-width: 45%;
+    flex: 1 1 45%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#servicios .servicio:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+#servicios .servicio .icono {
+    font-size: 40px;
+    color: #ff5080;
+    margin-bottom: 20px;
+}
+
+#servicios .servicio h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #111135;
+    font-weight: bold;
+}
+
+#servicios .servicio hr {
+    width: 50px;
+    height: 3px;
+    background-color: #ff5080;
+    border: none;
+    margin: 20px auto;
+}
+
+#servicios .servicio .servicios-tag {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#servicios .servicio .servicios-tag li {
+    font-size: 16px;
+    color: #565656;
+    margin: 0 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #d3d3d3;
+}
+
+#servicios .servicio p {
+    font-size: 16px;
+    color: #565656;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+/* SECCION HABILIDADES */
+.contenedor-skills {
+    background: linear-gradient(#021a30cc, rgba(33,16,16,.8)), url("image.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 20px;
+    background-color: #f3f3f3;
+    color: #f3f3f3;
+    text-align: center;
+}
+
+.contenedor-skills h3 {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #f3f3f3;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.contenedor-skills h3::after {
+    content: '';
+    width: 80px;
+    height: 3px;
+    background-color: #ff5080;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contenedor-skills .skill {
+    margin: 15px;
+    flex: 1;
+    max-width: 200px;
+}
+
+.contenedor-skills .skill img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.contenedor-skills .skill p {
+    font-size: 16px;
+    color: #fff;
+}
+
+/* MEDIA QUERIES */
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    #inicio .contenido header .contenido-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #inicio .contenido header .contenido-header nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    #icono-nav {
+        display: block;
+        cursor: pointer;
+    }
+
+    .presentacion h2 {
+        font-size: 40px;
+    }
+
+    .presentacion .descripcion {
+        font-size: 16px;
+    }
+
+    #sobremi {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #sobremi .contenedor-foto,
+    #sobremi .sobremi {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    #servicios .fila {
+        flex-direction: column;
+    }
+
+    #servicios .servicio {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .contenedor-skills .skill {
+        max-width: 100%;
+    }
+}
+
+/* Estilos para tabletas */
+@media (max-width: 1024px) {
+    #inicio .contenido header .contenido-header {
+        flex-direction: column;
+    }
+
+    #inicio .contenido header .contenido-header nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #servicios .fila {
+        flex-wrap: wrap;
+    }
+
+    #servicios .servicio {
+        max-width: 45%;
+    }
+
+    .contenedor-skills .skill {
+        max-width: 100%;
+    }
+}
+
+/* Asegura la correcta distribución de los elementos */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    flex: 1;
+    min-width: 200px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
