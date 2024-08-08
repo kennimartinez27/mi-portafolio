@@ -720,6 +720,115 @@ html {
     margin-top: 15px;
     line-height: 1.5;
 }
+/* Estilos generales para la sección Servicios */
+#servicios {
+    padding: 100px 20px;
+    background-color: #fff;
+    color: #111135;
+}
+
+#servicios .titulo-seccion {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #111135;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#servicios .titulo-seccion::after {
+    content: '';
+    width: 80px;
+    height: 3px;
+    background-color: #ff5080;
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#servicios .fila {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#servicios .servicio {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 15px;
+    max-width: 45%;
+    flex: 1 1 45%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#servicios .servicio:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+#servicios .servicio .icono {
+    font-size: 40px;
+    color: #ff5080;
+    margin-bottom: 20px;
+}
+
+#servicios .servicio h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #111135;
+    font-weight: bold;
+}
+
+#servicios .servicio hr {
+    width: 50px;
+    height: 3px;
+    background-color: #ff5080;
+    border: none;
+    margin: 20px auto;
+}
+
+#servicios .servicio .servicios-tag {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#servicios .servicio .servicios-tag li {
+    font-size: 16px;
+    color: #565656;
+    margin: 0 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #d3d3d3;
+}
+
+#servicios .servicio p {
+    font-size: 16px;
+    color: #565656;
+    margin-top: 15px;
+    line-height: 1.5;
+}
+
+/* Estilos Responsive para móviles */
+@media (max-width: 768px) {
+    #servicios .fila {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #servicios .servicio {
+        max-width: 100%;
+        margin: 15px 0;
+    }
+}
+
 
 /* SECCION HABILIDADES */
 .contenedor-skills {
